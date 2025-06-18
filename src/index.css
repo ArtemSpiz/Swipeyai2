@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	background-image: url('./assets/img/Back.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}

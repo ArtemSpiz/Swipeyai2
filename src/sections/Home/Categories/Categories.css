@@ -1,0 +1,42 @@
+.Categories {
+	display: flex;
+	justify-content: center;
+	gap: 48px;
+}
+
+.category {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.categoryImage {
+	width: 70px;
+}
+
+.categoryTitle {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 60px */
+	letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+	.categoryImage {
+		width: 60px;
+	}
+
+	.Categories {
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		gap: 16px;
+	}
+
+	.category {
+		gap: 8px;
+	}
+}
