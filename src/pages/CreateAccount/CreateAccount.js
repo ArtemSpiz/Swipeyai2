@@ -96,8 +96,15 @@ function CreateAccount() {
 						<div className='createText'>
 							<div className='createTitle'>Create your account</div>
 							<div className='createSubtitles'>
-								& Get 20 <img src={coin} alt='coin' className='coin' /> FREE To
-								Unlock Spicy Videos
+								& Get 20{' '}
+								<img
+									src={coin}
+									alt='coin'
+									className='coin'
+									loading='lazy'
+									decoding='async'
+								/>{' '}
+								FREE To Unlock Spicy Videos
 							</div>
 						</div>
 
@@ -167,7 +174,13 @@ function CreateAccount() {
 						<img src={createRight} alt='girl' className='createRightImage' />
 					</div>
 					<div className='createLeftImg'>
-						<img src={createLeft} alt='girl' className='createLeftImage' />
+						<img
+							loading='lazy'
+							decoding='async'
+							src={createLeft}
+							alt='girl'
+							className='createLeftImage'
+						/>
 					</div>
 				</div>
 			</div>

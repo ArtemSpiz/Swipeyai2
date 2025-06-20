@@ -1,8 +1,17 @@
 import './Hero.css'
 import checkMark from '../../../assets/img/checkMark.png'
 import Button from '../../../ui/Button/Button'
+import { useEffect } from 'react'
 
 function Hero() {
+	useEffect(() => {
+		const preloadPoster = document.createElement('link')
+		preloadPoster.rel = 'preload'
+		preloadPoster.as = 'image'
+		preloadPoster.href =
+			'https://cdn.assets-landing-candyai.com/marina/var16/video_poster.webp'
+		document.head.appendChild(preloadPoster)
+	}, [])
 	return (
 		<>
 			<div className='Hero'>
@@ -23,7 +32,12 @@ function Hero() {
 				</div>
 				<div className='heroRight'>
 					<div className='heroRightImage'>
-						<img src={checkMark} alt='checkMark' />
+						<img
+							src={checkMark}
+							alt='checkMark'
+							loading='lazy'
+							decoding='async'
+						/>
 					</div>
 
 					<div className='heroRightTitle'>CREATE YOUR OWN AI SLUT</div>

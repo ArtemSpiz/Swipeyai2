@@ -1,18 +1,20 @@
 import './Categories.css'
-import fire from '../../../assets/img/fire.png'
+import categories1 from '../../../assets/img/categories1'
+import categories2 from '../../../assets/img/categories2'
+import categories3 from '../../../assets/img/categories3'
 
 const categories = [
 	{
-		image: fire,
-		title: 'title1',
+		image: categories1,
+		title: 'Fully Uncensored Content',
 	},
 	{
-		image: fire,
-		title: 'title2',
+		image: categories2,
+		title: 'Unlimited Spicy Chat',
 	},
 	{
-		image: fire,
-		title: 'title3',
+		image: categories3,
+		title: 'Hot Role Plays',
 	},
 ]
 
@@ -23,7 +25,12 @@ function Categories() {
 				{categories.map((category, index) => (
 					<div key={index} className='category'>
 						<div className='categoryImage'>
-							<img src={category.image} alt='categoryImage' />
+							<img
+								loading='lazy'
+								decoding='async'
+								src={category.image}
+								alt='categoryImage'
+							/>
 						</div>
 
 						<div className='categoryTitle'>{category.title}</div>

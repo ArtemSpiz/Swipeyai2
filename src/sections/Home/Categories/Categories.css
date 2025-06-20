@@ -24,9 +24,13 @@
 	letter-spacing: 1px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 764px) {
+	.category :nth-child(1) {
+		margin-left: -12px;
+	}
 	.categoryImage {
 		width: 60px;
+		height: 60px;
 	}
 
 	.Categories {

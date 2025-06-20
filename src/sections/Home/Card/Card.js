@@ -7,7 +7,7 @@ function Card() {
 		<div className='cardWrapper'>
 			<div className='card'>
 				<div className='cardImage'>
-					<img src={heroGirl} alt='girl' />
+					<img loading='lazy' decoding='async' src={heroGirl} alt='girl' />
 				</div>
 				<div className='cardRight'>
 					<div className='cardRightTop'>
