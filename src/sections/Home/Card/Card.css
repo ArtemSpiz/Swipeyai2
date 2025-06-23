@@ -5,7 +5,7 @@
 }
 
 .card {
-	background-image: url('../../../assets/img/bgCard.png');
+	background-image: url('/public/img/bgCard.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
@@ -13,13 +13,13 @@
 	display: flex;
 	justify-content: center;
 	gap: 32px;
+	overflow: hidden;
 	width: 100%;
 }
 
 .cardImage {
+	height: auto;
 	width: 242px;
-	height: 342px;
-	aspect-ratio: 121/171;
 }
 
 .cardRight {
@@ -89,9 +89,7 @@
 @media (max-width: 768px) {
 	.cardImage {
 		width: 200px;
-		height: 255px;
 		flex-shrink: 0;
-		aspect-ratio: 135/191;
 	}
 
 	.cardTitle {
@@ -115,9 +113,9 @@
 	}
 	.cardImage {
 		width: 135px;
-		height: 191px;
 		flex-shrink: 0;
-		aspect-ratio: 135/191;
+		position: relative;
+		top: 4px;
 	}
 
 	.card {

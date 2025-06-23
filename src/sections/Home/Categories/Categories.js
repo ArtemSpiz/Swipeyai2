@@ -1,19 +1,16 @@
 import './Categories.css'
-import categories1 from '../../../assets/img/categories1'
-import categories2 from '../../../assets/img/categories2'
-import categories3 from '../../../assets/img/categories3'
 
 const categories = [
 	{
-		image: categories1,
+		image: '/img/categories1',
 		title: 'Fully Uncensored Content',
 	},
 	{
-		image: categories2,
+		image: '/img/categories2',
 		title: 'Unlimited Spicy Chat',
 	},
 	{
-		image: categories3,
+		image: '/img/categories3',
 		title: 'Hot Role Plays',
 	},
 ]

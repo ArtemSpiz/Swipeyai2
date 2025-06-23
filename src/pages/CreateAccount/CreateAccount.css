@@ -1,5 +1,5 @@
 .createAccount {
-	background-image: url('../../assets/img/signBg.png');
+	background-image: url('/public/img/signBg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;

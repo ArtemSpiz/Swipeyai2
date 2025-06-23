@@ -1,5 +1,4 @@
 import './Hero.css'
-import checkMark from '../../../assets/img/checkMark.png'
 import Button from '../../../ui/Button/Button'
 import { useEffect } from 'react'
 
@@ -33,7 +32,7 @@ function Hero() {
 				<div className='heroRight'>
 					<div className='heroRightImage'>
 						<img
-							src={checkMark}
+							src='/img/checkMark.png'
 							alt='checkMark'
 							loading='lazy'
 							decoding='async'

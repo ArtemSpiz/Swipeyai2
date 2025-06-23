@@ -48,7 +48,7 @@
 	position: absolute;
 	top: 13px;
 	left: 12px;
-	background-image: url('../../../assets/img/rectangle.png');
+	background-image: url('/public/img/rectangle.png');
 	background-repeat: no-repeat;
 	justify-content: center;
 	display: flex;

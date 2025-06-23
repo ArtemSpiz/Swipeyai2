@@ -1,5 +1,4 @@
 import './Card.css'
-import heroGirl from '../../../assets/img/heroGirl.png'
 import Button from '../../../ui/Button/Button'
 
 function Card() {
@@ -7,7 +6,12 @@ function Card() {
 		<div className='cardWrapper'>
 			<div className='card'>
 				<div className='cardImage'>
-					<img loading='lazy' decoding='async' src={heroGirl} alt='girl' />
+					<img
+						loading='lazy'
+						decoding='async'
+						src='/img/heroGirl.png'
+						alt='girl'
+					/>
 				</div>
 				<div className='cardRight'>
 					<div className='cardRightTop'>

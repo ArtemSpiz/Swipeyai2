@@ -1,34 +1,27 @@
 import './Explore.css'
-import checkMark from '../../../assets/img/checkMark.png'
-import Fire from '../../../assets/img/fire.png'
-import girlImg1 from '../../../assets/img/girlImage1.png'
-import girlImg2 from '../../../assets/img/girlImage2.png'
-import girlImg3 from '../../../assets/img/girlImage3.png'
-import girlImg4 from '../../../assets/img/girlImage4.png'
-
 import { useNavigate } from 'react-router-dom'
 
 const girlsCard = [
 	{
-		image: girlImg1,
+		image: '/img/girlImage1.png',
 		name: 'Mai',
 		age: '22',
 		checkMark: true,
 	},
 	{
-		image: girlImg2,
+		image: '/img/girlImage2.png',
 		name: 'Imani',
 		age: '26',
 		checkMark: true,
 	},
 	{
-		image: girlImg3,
+		image: '/img/girlImage3.png',
 		name: 'Olivia',
 		age: '24',
 		checkMark: false,
 	},
 	{
-		image: girlImg4,
+		image: '/img/girlImage4.png',
 		name: 'Valentina',
 		age: '23',
 		checkMark: true,
@@ -60,7 +53,7 @@ function Explore() {
 								<img
 									loading='lazy'
 									decoding='async'
-									src={Fire}
+									src='/img/fire.png'
 									alt='fire'
 									className='fire'
 								/>
@@ -75,7 +68,7 @@ function Explore() {
 									<img
 										loading='lazy'
 										decoding='async'
-										src={checkMark}
+										src='/img/checkMark.png'
 										alt='verified'
 										className='checkMark'
 									/>

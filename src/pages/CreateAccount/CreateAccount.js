@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import './CreateAccount.css'
-import createRight from '../../assets/img/createRight.png'
-import createLeft from '../../assets/img/createLeft.png'
 import Cross from '../../assets/svg/Cross'
-import coin from '../../assets/img/coin.png'
 import Arrow from '../../assets/svg/Arrow'
 import Eye from '../../assets/svg/Eye'
 import { useNavigate } from 'react-router-dom'
@@ -98,7 +95,7 @@ function CreateAccount() {
 							<div className='createSubtitles'>
 								& Get 20{' '}
 								<img
-									src={coin}
+									src='/img/coin.png'
 									alt='coin'
 									className='coin'
 									loading='lazy'
@@ -171,13 +168,17 @@ function CreateAccount() {
 
 				<div className='createImages'>
 					<div className='createRightImg'>
-						<img src={createRight} alt='girl' className='createRightImage' />
+						<img
+							src='/img/createRight.png'
+							alt='girl'
+							className='createRightImage'
+						/>
 					</div>
 					<div className='createLeftImg'>
 						<img
 							loading='lazy'
 							decoding='async'
-							src={createLeft}
+							src='/img/createLeft.png'
 							alt='girl'
 							className='createLeftImage'
 						/>
