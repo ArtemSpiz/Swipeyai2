@@ -1,6 +1,7 @@
 import './Hero.css'
 import Button from '../../../ui/Button/Button'
 import { useEffect } from 'react'
+import LazyImage from '../../../LazyImage'
 
 function Hero() {
 	useEffect(() => {
@@ -31,11 +32,10 @@ function Hero() {
 				</div>
 				<div className='heroRight'>
 					<div className='heroRightImage'>
-						<img
+						<LazyImage
 							src='/img/checkMark.png'
 							alt='checkMark'
 							loading='lazy'
-							decoding='async'
 						/>
 					</div>
 

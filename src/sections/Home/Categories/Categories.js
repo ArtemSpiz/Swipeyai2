@@ -1,3 +1,4 @@
+import LazyImage from '../../../LazyImage'
 import './Categories.css'
 
 const categories = [
@@ -22,9 +23,8 @@ function Categories() {
 				{categories.map((category, index) => (
 					<div key={index} className='category'>
 						<div className='categoryImage'>
-							<img
+							<LazyImage
 								loading='lazy'
-								decoding='async'
 								src={category.image}
 								alt='categoryImage'
 							/>

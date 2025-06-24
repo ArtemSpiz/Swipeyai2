@@ -1,10 +1,11 @@
+import LazyImage from '../../LazyImage'
 import './Header.css'
 function Header() {
 	return (
 		<>
 			<div className='header'>
 				<div className='header-logo'>
-					<img src='/img/logo.png' alt='logo' loading='lazy' decoding='async' />
+					<LazyImage src='/img/logo.png' alt='logo' loading='lazy' />
 				</div>
 			</div>
 		</>

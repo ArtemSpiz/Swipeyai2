@@ -4,6 +4,7 @@ import Cross from '../../assets/svg/Cross'
 import Arrow from '../../assets/svg/Arrow'
 import Eye from '../../assets/svg/Eye'
 import { useNavigate } from 'react-router-dom'
+import LazyImage from '../../LazyImage'
 
 function CreateAccount() {
 	const navigate = useNavigate()
@@ -94,12 +95,11 @@ function CreateAccount() {
 							<div className='createTitle'>Create your account</div>
 							<div className='createSubtitles'>
 								& Get 20{' '}
-								<img
+								<LazyImage
 									src='/img/coin.png'
 									alt='coin'
 									className='coin'
 									loading='lazy'
-									decoding='async'
 								/>{' '}
 								FREE To Unlock Spicy Videos
 							</div>
@@ -168,16 +168,16 @@ function CreateAccount() {
 
 				<div className='createImages'>
 					<div className='createRightImg'>
-						<img
+						<LazyImage
+							loading='lazy'
 							src='/img/createRight.png'
 							alt='girl'
 							className='createRightImage'
 						/>
 					</div>
 					<div className='createLeftImg'>
-						<img
+						<LazyImage
 							loading='lazy'
-							decoding='async'
 							src='/img/createLeft.png'
 							alt='girl'
 							className='createLeftImage'

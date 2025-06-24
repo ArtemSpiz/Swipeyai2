@@ -1,17 +1,13 @@
 import './Card.css'
 import Button from '../../../ui/Button/Button'
+import LazyImage from '../../../LazyImage'
 
 function Card() {
 	return (
 		<div className='cardWrapper'>
 			<div className='card'>
 				<div className='cardImage'>
-					<img
-						loading='lazy'
-						decoding='async'
-						src='/img/heroGirl.png'
-						alt='girl'
-					/>
+					<LazyImage loading='lazy' src='/img/heroGirl.png' alt='girl' />
 				</div>
 				<div className='cardRight'>
 					<div className='cardRightTop'>
