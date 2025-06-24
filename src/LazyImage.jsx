@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
+import './LazyImage.css'
 
 function LazyImage({ src, alt, className = '' }) {
 	const [isVisible, setIsVisible] = useState(false)
+	const [isLoaded, setIsLoaded] = useState(false)
 	const imgRef = useRef()
 
 	useEffect(() => {
@@ -24,12 +26,15 @@ function LazyImage({ src, alt, className = '' }) {
 		return () => observer.disconnect()
 	}, [])
 
+	const handleLoad = () => setIsLoaded(true)
+
 	return (
 		<img
 			ref={imgRef}
 			src={isVisible ? src : ''}
 			alt={alt}
-			className={className}
+			onLoad={handleLoad}
+			className={`${className} lazy-image ${isLoaded ? 'loaded' : ''}`}
 			loading='lazy'
 		/>
 	)
